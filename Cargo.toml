@@ -1,0 +1,21 @@
+[package]
+name = "string-interner"
+version = "0.1.0"
+edition = "2024"
+authors = ["Alex"]
+description = "A string interner for efficient string storage and comparison"
+license = "MIT"
+keywords = ["string", "interner", "intern", "symbol"]
+categories = ["data-structures"]
+
+[dependencies]
+hashbrown = "0.15"
+
+[features]
+default = []
+serde = ["dep:serde"]
+
+[dependencies.serde]
+version = "1.0"
+optional = true
+features = ["derive"]
